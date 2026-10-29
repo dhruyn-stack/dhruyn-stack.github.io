@@ -1,0 +1,35 @@
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --bg: #F6F4F0; --paper: #FFFFFF; --ink: #1E1B1A; --ink-2: #4A4441; --muted: #7A716C; --rule: #E4DED6;
+  --wine: #8C2341; --wine-soft: #F4E3E8; --indigo: #3346A8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141213; --paper: #1C191A; --ink: #EFE9E4; --ink-2: #C9C0BA; --muted: #978D87; --rule: #332E2C;
+    --wine: #E58AA3; --wine-soft: #3A1E27; --indigo: #9AA8F2;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); }
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 72px; }
+a { color: var(--indigo); }
+.kicker { font: 600 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--wine); margin: 0; }
+.kicker a { color: inherit; text-decoration: none; }
+h1 { font: 400 clamp(36px, 7vw, 52px)/1.1 var(--serif); margin: 10px 0 6px; }
+.lede { font: italic 21px/1.4 var(--serif); color: var(--indigo); margin: 0 0 26px; }
+.date { color: var(--muted); margin: 0 0 22px; }
+h2 { font: 400 27px/1.2 var(--serif); margin: 34px 0 8px; }
+h2.first { margin-top: 0; }
+p, li { color: var(--ink-2); }
+ul { padding-left: 22px; }
+li { margin: 5px 0; }
+.box { background: var(--paper); border: 1px solid var(--rule); border-radius: 16px; padding: 20px 22px; margin: 18px 0; }
+table { width: 100%; border-collapse: collapse; background: var(--paper); border-radius: 14px; overflow: hidden; margin: 10px 0; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; font-size: 15px; }
+th { color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; }
+td:first-child { color: var(--ink); font-weight: 600; }
+details { background: var(--wine-soft); border-radius: 14px; padding: 12px 18px; margin: 10px 0; }
+summary { cursor: pointer; font-weight: 700; color: var(--wine); }
+details p { color: var(--ink); margin: 8px 0 0; }
+.foot { margin-top: 40px; font-size: 15px; color: var(--muted); }
