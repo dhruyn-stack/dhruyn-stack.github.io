@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lekhin Notes · Privacy Policy</title>
+<meta name="description" content="How Lekhin Notes handles your data: notes stay on your iPad; the app goes online only for the café, Card Sync, files that cards use, and videos you tap.">
+<link rel="canonical" href="https://lekhinnotes.com/privacy/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <p class="kicker"><a href="../">Lekhin Notes</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: 3 November 2026</p>
+
+  <div class="box">
+    <h2 class="first">The short version</h2>
+    <ul>
+      <li>Your notes stay on your iPad. We never see them.</li>
+      <li>The app goes online only for the <b>study café</b>, <b>Card Sync</b> with your own computer, cards that use files from the web, and videos you tap. The café server keeps your café name, avatar, buddies, chats, the cards you share and reports (the full list is in section 2).</li>
+      <li>No ads. No tracking. We never sell or share your data for advertising.</li>
+    </ul>
+  </div>
+
+  <p><b>Who we are:</b> Lekhin Notes is made by an independent developer (the seller named on the App Store page). Contact: <a href="mailto:support@lekhinnotes.com">support@lekhinnotes.com</a>.</p>
+
+  <h2>1. What stays on your iPad</h2>
+  <p>Notebooks, handwriting, typed text, topic cards, PDFs, pictures, camera scans, voice notes, clips, your café to-do list, study progress and settings are stored only on your iPad. We never receive them. A backup goes only where you choose to save it (for example the Files app or iCloud Drive), under your own Apple account. If iCloud Backup is on, Apple's backup of your iPad includes your notes too.</p>
+  <p>The camera is used only when you take a photo or scan a page into a notebook. The microphone is used only when you record a voice note, or when you switch voice on in a private café.</p>
+  <p><b>Card Sync</b> with your own computer works over your Wi-Fi, straight between your devices. It never passes through our server. It is protected by the pairing code but not encrypted, so use it only on your own Wi-Fi.</p>
+  <p><b>Cards from the web:</b> a card you add can use files on the internet (fonts, pictures, chart tools). The first time you open a card, and each time it changes, the app runs it once, out of sight, for up to 2 minutes, to download those files. During that run the card's own code can reach public websites, so those sites (and any tracking code inside the card) see your device's internet address. The card's code sees only that card, nothing else in the app. After that the card works with no internet, and links inside it do nothing. A YouTube video's picture is downloaded in that run; the video plays from YouTube or Vimeo only when you tap it, and their own privacy policy applies while it plays.</p>
+
+  <h2>2. What the study café keeps on our server</h2>
+  <p>When you first open the café, the app makes an <b>anonymous café account</b>: no email, no phone number, no password. The café server (Supabase, hosted in Mumbai, India) keeps:</p>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>A random account id</td><td>To know which seat, buddies and messages are yours</td></tr>
+    <tr><td>Your café name and avatar look</td><td>Shown to other students on your profile</td></tr>
+    <tr><td>Your streak, your minutes studied today, your focus timer, and whether you are focusing or on a break</td><td>Shown on your profile and seat</td></tr>
+    <tr><td>Which café room you are in now, and which table you focus at, minute by minute (only your latest 2 days of minutes are kept: older ones are deleted as new ones come in, and all of them when you delete your café account)</td><td>To count your 60 minutes together for study buddies, and so your buddies can join you</td></tr>
+    <tr><td>Study buddies, buddy requests, blocks</td><td>So buddies and blocking work</td></tr>
+    <tr><td>Messages to buddies and in private cafés</td><td>So they can be delivered</td></tr>
+    <tr><td>Cards and notes you choose to share (a note goes as pictures of its pages), and who you shared them with</td><td>So the other student can open them</td></tr>
+    <tr><td>Private cafés you made or joined, and tries to join one with a code (only your latest day of tries is kept)</td><td>So the room code and members work</td></tr>
+    <tr><td>Reports you send, with the last few messages of that chat</td><td>So we can deal with abuse</td></tr>
+    <tr><td>Reports about you, the times the word filter hid your words, and any mute or ban</td><td>So the café rules work</td></tr>
+  </table>
+  <p>The café <b>never</b> keeps what you study, your notes, or your location.</p>
+  <p><b>Voice and "Show my page" are live only.</b> Voice in a private café goes through LiveKit, a voice relay service, while you talk. To join voice, LiveKit gets your café account id and café name, and it may keep a record of each call (the room, who joined, and when). "Show my page" goes through the café server while you show it. Neither is recorded or saved. The café server only notes the time you join voice, and keeps only your latest day of these; all of them go when you delete your café account.</p>
+
+  <h2>3. Who else handles the data</h2>
+  <ul>
+    <li><b>Supabase</b> stores the café data above and passes live café updates.</li>
+    <li><b>LiveKit</b> passes voice in private cafés, live only.</li>
+    <li><b>Google</b> (Gmail) carries the report emails to us (see section 8).</li>
+    <li><b>Google Fonts</b> sends the Pine &amp; Page café its two fonts (Inter and Shantell Sans) when you open that café. Google sees a normal download request from your device; no café data goes there, and Google's own privacy policy applies to it.</li>
+  </ul>
+  <p>Supabase, LiveKit and Gmail handle the data only to run the café for us, and protect it at least as well as this policy says. Like any internet service, Supabase, LiveKit and Google Fonts see your device's internet address while you are connected. We use no analytics, advertising or tracking services.</p>
+
+  <h2>4. How long we keep it</h2>
+  <ul>
+    <li>Café data stays until you delete your café account. Then it is removed straight away.</li>
+    <li>Reports are kept for up to 12 months after we have dealt with them, so we can act on repeat abuse. When an account is deleted, its id is taken off the report's own fields for who reported and who was reported. The chat lines saved with a report keep the café names, account ids and messages in them. Our safety log of reports, mutes and bans, and the report emails (section 8), keep their copy (café names, account ids and the last messages). All of these stay for the same 12 months, also after an account is deleted.</li>
+  </ul>
+
+  <h2>5. Delete your data</h2>
+  <ul>
+    <li><b>In the app:</b> Library › More › <b>About &amp; privacy</b> › <b>Delete my café account</b>. Or inside the café: tap yourself › Change my name › <b>Delete my café account</b>.</li>
+    <li><b>By email:</b> write to <a href="mailto:support@lekhinnotes.com">support@lekhinnotes.com</a> and we delete it within 30 days.</li>
+    <li>Your notes on the iPad are yours: delete them in the app, or delete the app.</li>
+    <li>Deleting the app does not delete your café account. Use <b>Delete my café account</b> first.</li>
+    <li>Cards, notes and messages you sent stay on the other student's iPad after you delete your account.</li>
+  </ul>
+
+  <h2>6. Children</h2>
+  <p>The café is for students aged 13 and older. Lekhin Notes is not made for children under 13, and we do not knowingly keep data from them. If you think a child under 13 uses the café, email us and we will delete the account.</p>
+
+  <h2>7. Safety in the café</h2>
+  <p>Students agree to the café rules before they join. Every profile and chat has <b>Report</b> and <b>Block</b>. We read reports within 24 hours and remove people who break the rules.</p>
+
+  <h2>8. Your rights, and how your data is kept safe</h2>
+  <ul>
+    <li><b>Your rights:</b> you can ask us to show you the café data we keep about you, to correct it, or to delete it. Email <a href="mailto:support@lekhinnotes.com">support@lekhinnotes.com</a> and we answer within 30 days. If you are not happy with our answer, you can complain to the data protection authority where you live. In India that is the Data Protection Board of India (Digital Personal Data Protection Act, 2023). In the EU or the UK it is your national data protection authority (GDPR).</li>
+    <li><b>How it is protected:</b> everything the app sends to the café server and to LiveKit is encrypted on the way. The server's rules let each student read only what is meant for them: only you and your buddy can read your buddy chat, only the members of a private café can read its chat and cards, and nobody else can read your reports or blocks.</li>
+    <li><b>Where it is kept:</b> on Supabase's servers in Mumbai, India. Voice goes through LiveKit, whose servers may be outside India.</li>
+    <li><b>Google:</b> when someone is reported, muted or banned, the café server emails us the details (café names, account ids and the last messages of that chat) through a small Google Apps Script in our own Google account. So Google's Gmail handles those emails.</li>
+  </ul>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, we update this page and the date at the top.</p>
+
+  <p class="foot"><a href="../support/">Lekhin Notes support</a></p>
+</main>
+</body>
+</html>
